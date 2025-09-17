@@ -97,9 +97,13 @@ export function Resume() {
                       rel="noopener noreferrer"
                       className="flex-1"
                     >
-                      <Button variant="outline" size="lg" className="glass group w-full bg-transparent">
+                      <Button
+                        variant="outline"
+                        size="lg"
+                        className="glass group w-full bg-transparent rounded-lg transition-colors duration-200 hover:bg-primary/10 hover:text-accent dark:hover:text-accent"
+                      >
                         <Eye className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-                        View Online
+                        <span className="transition-colors duration-200">View Online</span>
                       </Button>
                     </a>
                   </div>

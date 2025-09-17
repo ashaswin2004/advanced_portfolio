@@ -7,11 +7,11 @@ import { GraduationCap, Calendar, MapPin, Award } from "lucide-react"
 const education = [
   {
     degree: "Bachelor of Engineering in Computer Science",
-    institution: "University of Technology",
+    institution: "University College of Engineering, Kanchipuram",
     duration: "2022 - 2026",
-    location: "San Francisco, CA",
+    location: "Kanchipuram, TN, India",
     status: "In Progress",
-    gpa: "3.8/4.0",
+    gpa: "8.0/10",
     relevantCourses: [
       "Data Structures & Algorithms",
       "Database Management Systems",
@@ -23,31 +23,31 @@ const education = [
     achievements: [
       "Dean's List (Fall 2023, Spring 2024)",
       "Computer Science Society Member",
-      "Hackathon Winner - TechFest 2024",
+      
     ],
   },
   {
     degree: "Higher Secondary Certificate (12th Grade)",
-    institution: "Central High School",
-    duration: "2020 - 2022",
-    location: "San Francisco, CA",
+    institution: "Babuji Memorial Higher Secondary School",
+    duration: "2021 - 2022",
+    location: "Nagercoil, TN, India",
     status: "Completed",
-    percentage: "92%",
-    stream: "Science (PCM + Computer Science)",
+    percentage: "85%",
+    stream: "Bio Maths",
     achievements: [
-      "School Topper in Computer Science",
+      "School Topper in Bio Maths",
       "Science Olympiad State Level Qualifier",
-      "Student Council Vice President",
+      "Best Student Award",
     ],
   },
   {
-    degree: "Secondary School Certificate (10th Grade)",
-    institution: "Central High School",
+    degree: "High School Certificate (10th Grade)",
+    institution: "St.Joseph's High School, Nagercoil",
     duration: "2018 - 2020",
-    location: "San Francisco, CA",
+    location: "Nagercoil, TN, India",
     status: "Completed",
-    percentage: "95%",
-    achievements: ["School Rank 2", "Mathematics Olympiad District Winner", "Best Student Award"],
+    percentage: "89%",
+    achievements: ["School Rank 1", "Mathematics Olympiad District Winner", "Student Council President"],
   },
 ]
 

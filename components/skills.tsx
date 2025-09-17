@@ -11,10 +11,10 @@ const skillCategories = [
     icon: Code,
     color: "text-blue-500",
     skills: [
-      { name: "React/Next.js", level: 85 },
-      { name: "TypeScript", level: 80 },
+      { name: "HTML/CSS", level: 95 },
+      { name: "React/Next.js", level: 80 },
       { name: "Tailwind CSS", level: 90 },
-      { name: "JavaScript", level: 88 },
+      { name: "JavaScript", level: 80 },
     ],
   },
   {

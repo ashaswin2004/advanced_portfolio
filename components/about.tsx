@@ -49,7 +49,7 @@ export function About() {
                   <div className="flex items-start space-x-6">
                     <div className="relative">
                       <img
-                        src="/computer-science-student-portrait.png"
+                        src="/aswin_profile.jpg"
                         alt="Profile"
                         className="w-24 h-24 rounded-full object-cover border-2 border-primary/30"
                       />
@@ -59,7 +59,7 @@ export function About() {
                     </div>
 
                     <div className="flex-1">
-                      <h3 className="text-2xl font-bold mb-2">John Doe</h3>
+                      <h3 className="text-2xl font-bold mb-2">Aswin S</h3>
                       <Badge variant="secondary" className="mb-4">
                         Computer Science Student
                       </Badge>

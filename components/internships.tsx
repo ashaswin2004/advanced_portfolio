@@ -6,10 +6,10 @@ import { Building, Calendar, MapPin, CheckCircle } from "lucide-react"
 
 const internships = [
   {
-    company: "TechCorp Solutions",
-    role: "Frontend Development Intern",
-    duration: "Jun 2024 - Aug 2024",
-    location: "Remote",
+    company: "Ekadd technologies",
+    role: "Full Stack Development Intern",
+    duration: "June 2025 - July 2025",
+    location: "Nagercoil, TN, India",
     type: "Summer Internship",
     responsibilities: [
       "Developed responsive web components using React and TypeScript",
@@ -17,21 +17,21 @@ const internships = [
       "Optimized application performance resulting in 25% faster load times",
       "Participated in code reviews and agile development processes",
     ],
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Git"],
+    technologies: ["HTML", "CSS", "JavaScript", "Java", "Git"],
   },
   {
-    company: "StartupXYZ",
-    role: "Full Stack Development Intern",
-    duration: "Jan 2024 - May 2024",
-    location: "San Francisco, CA",
-    type: "Part-time",
+    company: "Novitech R&D Private Limited",
+    role: "Full Stack Development Course",
+    duration: "August 2025 - September 2025",
+    location: "Remote",
+    type: "Online Course",
     responsibilities: [
       "Built RESTful APIs using Node.js and Express.js",
       "Implemented user authentication and authorization systems",
       "Designed and optimized database schemas using PostgreSQL",
       "Created comprehensive documentation for API endpoints",
     ],
-    technologies: ["Node.js", "Express.js", "PostgreSQL", "JWT"],
+    technologies: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "MongoDB", "React", "Git"],
   },
 ]
 

@@ -33,10 +33,10 @@ export function Hero() {
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="space-y-8 animate-fade-in">
           {/* Profile Image */}
-          <div className="relative mx-auto w-48 h-48 mb-8">
-            <div className="w-full h-full rounded-full bg-gradient-to-br from-primary to-accent p-1 animate-float">
+          <div className="relative mx-auto w-48 h-48 mb-8" style={{ top: '20px', position: 'relative' }}>
+            <div className="w-full h-full rounded-full bg-gradient-to-br from-primary to-accent p-1">
               <div className="w-full h-full rounded-full bg-card flex items-center justify-center">
-                <img src="/professional-headshot-of-young-computer-science-st.jpg" alt="Profile" className="w-44 h-44 rounded-full object-cover" />
+                <img src="/aswin_profile.jpg" alt="Profile" className="w-44 h-44 rounded-full object-cover" />
               </div>
             </div>
           </div>
@@ -59,12 +59,25 @@ export function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="animate-glow group">
+            <Button
+              size="lg"
+              className="animate-glow group"
+              onClick={() => {
+                document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+              }}
+            >
               Get In Touch
               <Mail className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button variant="outline" size="lg" className="glass group bg-transparent">
-              View My Work
+            <Button
+              variant="outline"
+              size="lg"
+              className="glass group bg-transparent rounded-lg transition-colors duration-200 hover:bg-primary/10 hover:text-accent dark:hover:text-accent"
+              onClick={() => {
+                document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })
+              }}
+            >
+              <span className="transition-colors duration-200">View My Work</span>
               <ArrowDown className="w-5 h-5 ml-2 group-hover:translate-y-1 transition-transform" />
             </Button>
           </div>
@@ -72,9 +85,9 @@ export function Hero() {
           {/* Social Links */}
           <div className="flex justify-center space-x-6 pt-8">
             {[
-              { icon: Github, href: "#", label: "GitHub" },
-              { icon: Linkedin, href: "#", label: "LinkedIn" },
-              { icon: Mail, href: "#", label: "Email" },
+              { icon: Github, href: "https://github.com/ashaswin2004", label: "GitHub" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/aswin-s-8141732a1/", label: "LinkedIn" },
+              { icon: Mail, href: "mailto:ashaswin28112004@gmail.com", label: "Email" },
             ].map(({ icon: Icon, href, label }) => (
               <a
                 key={label}

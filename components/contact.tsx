@@ -16,6 +16,7 @@ const contactInfo = [
     label: "Email",
     value: "ashaswin28112004@gmail.com",
     href: "mailto:ashaswin28112004@gmail.com",
+  },
   {
     icon: Phone,
     label: "Phone",
@@ -64,15 +65,28 @@ export function Contact() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000))
-
-    // Reset form
-    setFormData({ name: "", email: "", subject: "", message: "" })
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      })
+      if (res.ok) {
+        setFormData({ name: "", email: "", subject: "", message: "" })
+        alert("Message sent successfully!")
+      } else {
+        const data = await res.json()
+        alert(data.message || "Failed to send message.")
+      }
+    } catch (error) {
+      alert("Failed to send message.")
+    }
     setIsSubmitting(false)
-
-    // Show success message (you can implement toast notification here)
-    alert("Message sent successfully!")
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

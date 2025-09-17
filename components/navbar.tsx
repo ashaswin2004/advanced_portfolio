@@ -60,13 +60,13 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+        <div className="flex flex-col md:flex-row items-center justify-center md:justify-between">
+          <div className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-4 md:mb-0 md:mr-8">
             Portfolio
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex flex-1 justify-center items-center space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.name}
@@ -82,14 +82,31 @@ export function Navbar() {
 
           {/* Resume Buttons & Theme Toggle */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" size="sm" className="glass bg-transparent">
-              <Eye className="w-4 h-4 mr-2" />
-              View Resume
-            </Button>
-            <Button size="sm" className="animate-glow">
-              <Download className="w-4 h-4 mr-2" />
-              Download
-            </Button>
+            <a
+              href="/Aswin_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass bg-transparent"
+            >
+               <Button
+                        variant="outline"
+                        size="lg"
+                        className="glass group w-full bg-transparent rounded-lg transition-colors duration-200 hover:bg-primary/10 hover:text-accent dark:hover:text-accent"
+                      >
+                        <Eye className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+                        <span className="transition-colors duration-200">View Online</span>
+                      </Button>
+            </a>
+            <a
+              href="/Aswin_Resume.pdf"
+              download
+              className="w-full"
+            >
+              <Button size="sm" className="animate-glow w-full">
+                <Download className="w-4 h-4 mr-2" />
+                Download
+              </Button>
+            </a>
             <Button variant="ghost" size="sm" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
               {theme === "dark" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
             </Button>

@@ -140,11 +140,11 @@ export function Projects() {
                       <DialogTrigger asChild>
                         <Button
                           variant="outline"
-                          className="w-full glass group-hover:bg-primary/10 bg-transparent"
+                          className="w-full glass bg-transparent rounded-lg transition-colors duration-200 hover:bg-primary/10 hover:text-accent dark:hover:text-accent"
                           onClick={() => setSelectedProject(project)}
                         >
-                          View Details
-                          <Eye className="w-4 h-4 ml-2" />
+                          <span className="transition-colors duration-200">View Details</span>
+                          <Eye className="w-4 h-4 ml-2 transition-transform duration-200 group-hover:scale-110" />
                         </Button>
                       </DialogTrigger>
                       <DialogContent className="max-w-2xl glass">
